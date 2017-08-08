@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Fib {
+public static void main(String[] args) {
+	int count;
+	System.out.println("enter number");
+	Scanner s=new Scanner(System.in);
+	count=s.nextInt();
+	s.close();
+	task(count);
+	
+}
+public static void task(int count)
+{
+	if(count==0)
+	{
+		System.out.println(count);
+		
+	}
+	else if(count<0) {
+		System.out.println("error, we cant have negative numbers");
+	}
+	else
+	{
+		int n1=0,n2=1,n3,i;
+		
+		System.out.print(n1+" "+n2+" ");
+		for(i=2;i<count;++i)
+		{
+			
+			n3=n1+n2;
+			System.out.print(" "+n3);
+			n1=n2;
+			n2=n3;
+			
+		}	
+		String result=test(5);
+		
+		
+	}
+}
+public static void test(int count) {
+	
+	
+}
+}

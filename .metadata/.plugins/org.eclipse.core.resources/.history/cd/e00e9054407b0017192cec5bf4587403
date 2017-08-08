@@ -1,0 +1,50 @@
+package com.signup.example;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.jdo.PersistenceManager;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class SignUpFormServlet2 extends HttpServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
+
+		/*
+		 * PrintWriter out = resp.getWriter(); HttpSession session =
+		 * req.getSession(false); String n=(String)session.getAttribute("name");
+		 * out.print("hello "+n);
+		 * 
+		 * 
+		 * if (session != null) { session.invalidate();
+		 */
+		resp.setContentType("text/html");
+		PrintWriter out = resp.getWriter();
+
+		String userName = req.getParameter("userName");
+		out.print("Hello " + userName);
+
+		String email = req.getParameter("email");
+		String userPass = req.getParameter("userPass");
+		String phonenumber = req.getParameter("phonenumber");
+
+		PersistenceManager pm = PMF.get().getPersistenceManager();
+		SignUpFormjdo signupformobjectjdo = new SignUpFormjdo(userName, email, userPass, phonenumber);
+		try {
+			//signupformobjectjdo.setemail(email);
+			pm.makePersistent(signupformobjectjdo);
+			SignUpFormjdo e = pm.getObjectById(SignUpFormjdo.class, email);
+			System.out.println(e);
+		} finally {
+			pm.close();
+		}
+	}
+
+}

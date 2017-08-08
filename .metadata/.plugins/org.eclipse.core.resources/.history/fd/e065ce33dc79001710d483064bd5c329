@@ -1,0 +1,22 @@
+package com.signup.example;
+
+import javax.jdo.annotations.PersistenceCapable;
+import javax.jdo.annotations.Persistent;
+
+@PersistenceCapable
+public class SignUpFormjdo {
+	 @Persistent
+	    private String userName;
+	 @Persistent
+	 private String email;
+	 @Persistent
+	 private String userPass;
+	 @Persistent
+	 private int phonenumber;
+	 public SignUpFormjdo(String userName,String email,String userPass,int phonenumber) {
+	 this.userName=userName;
+	 this.email=email;
+	 this.userPass=userPass;
+	 this.phonenumber=phonenumber;
+	 }
+}

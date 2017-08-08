@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="shopping.css" type="text/css" />
+<link rel="stylesheet"
+	href="css/bootstrap.min.css">
+	
+<title>OnlineShopping</title>
+</head>
+<script
+	src="jquery-3.2.1.min (1).js"></script>
+<script
+	src="js/bootstrap.min.js"></script>
+<header>
+
+	<div class="center">
+		<h1>e-shopping</h1>
+	</div>
+
+</header>
+
+
+<body>
+
+	<nav class="fixed-nav-bar">
+		<div class="container-fluid">
+			<div class="navbar-header"></div>
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="#"><span class="span-logo"> <img
+							src="C:\Users\User.FULL277-WIN\Downloads\images\images.png" /></span> </a></li>
+			</ul>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#"">Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Baby And Kids</a></li>
+					<li><a href="#">Home And Furniture</a></li>
+
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+							Your Account</a></li>
+					<li><a href="#"><span
+							class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+				</ul>
+			</div>
+			<br> <br>
+
+
+		</div>
+
+
+
+
+	</nav>
+
+	<section>
+
+
+		<div class="container">
+			<div class="leftpane">
+				<div>
+					<a href="#"><input type="text" placeholder="search">
+						<button type="button">Search</button>
+					     </a>
+				</div>
+				
+					<div class="contact">
+						<a href="#"> <!-- Trigger the modal with a button -->
+							<button type="button" class="btn btn-info btn-lg"
+								data-toggle="modal" data-target="#myModal">Contact</button></a>
+
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal"></button>
+										<h4 class="modal-title">Contact Info</h4>
+									</div>
+									<div class="modal-body">
+										Email:<input type="text" placeholder="email" id="one"  /><br>
+										Phone Number:<input type="text" placeholder="phone number"
+											id="two" onKeyup="checkform()" /><br> 
+											Question:<input type="text"
+											placeholder="What can we help with ?" id="three"  />
+
+
+									</div>
+									<div class="modal-footer">
+									<button type="submit" value=" Send" class="btn btn-success" id="submit" data-dismiss="modal" id="enable" onclick="myFunction()">
+										Submit</button>
+										
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Close</button>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+				</form>
+			</div>
+            
+			<div class="middlepane">
+				<div id="container">
+    
+     				<div class="well well-sm">
+    
+        				<div class="btn-group">
+          	  				<a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+           							 </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+           			     class="glyphicon glyphicon-th"></span>Grid</a>
+       					 </div>
+    				 </div> 
+				<div class="row">
+    					<div class="col-md-4">
+      						<div class="thumbnail">
+        							<a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\Maan-International-Black-White-Dial-SDL571881631-1-cee85.jpg" style="width:100%"/>
+         									 <div class="caption">
+           										 <p>Maan-International-Black-White </p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;1800/-</span>	
+          									</div>
+       								
+      						</div>
+   						</div>
+   						 <div class="col-md-4">
+     							 <div class="thumbnail">
+       									 <a href="#">
+         									 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\redmi.jpg" style="width:100%">
+         								 	<div class="caption">
+           									 	 <p>OPEN_BOX_Xiaomi_Redmi_Note</p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;12,299/-</span>	
+         									 </div>
+       									</a>
+      							</div>
+   						 </div>
+    					<div class="col-md-4">
+     						 <div class="thumbnail">
+       							 <a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\kids wear.jpg" alt="Fjords" style="width:100%">
+         								 <div class="caption">
+         									   <p>Ftcbazar-Multicolor-Dhoti-and-Pajama</p>
+         									   </a>
+         									   <span style='font-family:Arial;'>&#x20b9;2,567/-</span>
+         								 </div>
+       							 </a>
+     						 </div>
+   						 </div>
+
+						<div class="row">
+    						<div class="col-md-4">
+      						<div class="thumbnail">
+        							<a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\bluetooth.jpg" style="width:100%"/>
+         									 <div class="caption">
+           										 <p>Shree-Vallabh-Sarees-Bluetooth-Headset</p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;700/-</span>	
+          									</div>
+       								
+      							</div>
+   							</div>
+   						 <div class="col-md-4">
+     							 <div class="thumbnail">
+       									 <a href="#">
+         									 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\sarees.jpg" style="width:100%">
+         								 	<div class="caption">
+           									 	 <p>Ishin-Multicoloured-Georgette-Saree</p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;5,699/-</span>	
+         									 </div>
+       									</a>
+      							</div>
+   						 </div>
+    						<div class="col-md-4">
+     						 <div class="thumbnail">
+       							 <a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\juicer.jpg" alt="Fjords" style="width:100%">
+         								 <div class="caption">
+         									   <p>Pigeon-Pure-True-Care-Slow</p>
+         									   </a>
+         									   <span style='font-family:Arial;'>&#x20b9;9,649/-</span>
+         								 </div>
+       							 </a>
+     						 </div>
+   						</div>
+
+					</div>
+					<div class="row">
+    						<div class="col-md-4">
+      						<div class="thumbnail">
+        							<a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\fridge.jpg" style="width:100%"/>
+         									 <div class="caption">
+           										 <p>Samsung 192  Single Door Refrigerator</p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;11,800/-</span>	
+          									</div>
+       								
+      							</div>
+   							</div>
+   						 <div class="col-md-4">
+     							 <div class="thumbnail">
+       									 <a href="#">
+         									 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\soldering.jpg" style="width:100%">
+         								 	<div class="caption">
+           									 	 <p>Easy Electronics Soldering Iron</p>
+           										 	</a>
+           										 <span style='font-family:Arial;'>&#x20b9;376/-</span>	
+         									 </div>
+       									</a>
+      							</div>
+   						 </div>
+    						<div class="col-md-4">
+     						 <div class="thumbnail">
+       							 <a href="#">
+         							 <img src="C:\Users\User.FULL277-WIN\Desktop\New folder\images\cottondress.jpg" alt="Fjords" style="width:100%">
+         								 <div class="caption">
+         									   <p>Texco Cotton Gown</p>
+         									   </a>
+         									   <span style='font-family:Arial;'>&#x20b9;1,199/-</span>
+         								 </div>
+       							 </a>
+     						 </div>
+   						</div>
+
+
+
+
+						</div>	
+
+
+
+
+
+  
+					
+					
+				</div>
+
+			</div>
+			<div class="rightpane">
+				<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Filter By...
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">Low cost</a></li>
+      <li><a href="#">High cost</a></li>
+      <li><a href="#">Availability</a></li>
+    </ul>
+  </div>
+</div>
+
+		</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+	
+	<footer></footer>
+	<script type="text/javascript" language="javascript">
+function myFunction() {
+    var a= document.getElementById("enable");
+    
+   window.alert("message sent successfully");
+   
+   
+};
+
+
+
+</script> 
+</body>
+</html>

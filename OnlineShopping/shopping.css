@@ -1,0 +1,108 @@
+.fixed-nav-bar {
+	position: absolute;
+	top: 20;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	background-color: #ffff80;
+}
+
+#nav {
+	min-height: 60px;
+	color: black;
+}
+
+.span-logo {
+	display: inline-block;
+	vertical-align: top;
+	height: 6px;
+	width: 68px;
+	margin-left: 16px;
+	margin-top: -27px;
+}
+
+.leftpane {
+	width: 200px;
+	height: 1383px;
+	float: left;
+	margin-left: -110px;
+	padding-top: 125px;
+	    padding-left: 14px;
+	padding-right: 10px;
+	margin-top: 0px;
+	background-color: rosybrown;
+	
+}
+
+.middlepane {
+	width:  85%;
+	height: 591px;
+	float: left;
+
+	margin-top: 66px;
+}
+
+.rightpane {
+	    width: 148px;
+	
+	float: right;
+	background-color: rosybrown;
+	
+	padding-top: 125px;
+	padding-left: 31px;
+	padding-right: 0px;
+	height: 1330px;
+    margin-right: -185px;
+    margin-bottom: 500px;
+    margin-top: -1346px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+div h1 {
+	color: #00a087;
+}
+
+div a {
+	color: black;
+}
+
+.center {
+	text-align: center;
+}
+
+#one {
+	margin-left: 83px;
+	margin-bottom: 19px;
+}
+
+#two {
+	margin-left: 23px;
+}
+#three{
+	margin-left: 62px;
+    margin-top: 18px;
+}
+.contact
+{
+  margin-bottom: 0px;
+  margin-top: 370px;
+  padding-left: 19px;
+
+}
+.well-sm{
+	    margin-left: 379px;
+	   
+	        margin-right: 461px;
+
+}
+
+.thumbnail {
+	margin-bottom: 20px;
+    padding-right: 20px;
+    margin-left:25px;
+
+}

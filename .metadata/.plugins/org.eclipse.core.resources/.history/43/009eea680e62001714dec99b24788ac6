@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Control {
+	public static void main(String[] args) {  
+		//if..else
+	    int age=20;  
+	    if(age>18){  
+	        System.out.println("Eligible for voting");  
+	
+	    }
+	    else{  
+	        System.out.println("Not Eligible for voting");  
+	    }  
+	    //else if ladder
+	    int marks; 
+	    System.out.println("enter your marks");
+	    Scanner sc=new Scanner(System.in);
+	    marks=sc.nextInt();
+	    sc.close();
+	      
+	    if(marks<35){  
+	        System.out.println("fail");  
+	    }  
+	    else if(marks>=35 && marks<40){  
+	        System.out.println("D grade");  
+	    }  
+	    else if(marks>=40 && marks<50){  
+	        System.out.println("C grade");  
+	    }  
+	    else if(marks>=50 && marks<60){  
+	    	System.out.println("B grade");  
+	    }  
+	    else if(marks>=60 && marks<80){  
+	        System.out.println("A grade");  
+	    }else if(marks>=90 && marks<100){  
+	        System.out.println("A+ grade");  
+	    }else{  
+	        System.out.println("Invalid!"); 
+	    }
+	    //switch statement
+	    int choice;  
+
+	    System.out.println("select the choice:");
+	    System.out.println("1.Idly");
+	    System.out.println("2.Rice");
+	    System.out.println("3.Chapathi");
+	    System.out.println("4.Dosa");
+	  
+	    Scanner st=new Scanner(System.in);
+	   choice =st.nextInt();
+	    sc.close();
+	    switch(choice){  
+	    case 1: System.out.println("You have selected Idly");break;  
+	    case 2: System.out.println("You have selected Rice");break;  
+	    case 3: System.out.println("You have selected Chapathi");break;  
+	    case 4: System.out.println("You have selected Dosat");break;  
+	    default:System.out.println("Not in 10, 20 or 30");  
+	    }  
+	    
+	}
+	
+}
